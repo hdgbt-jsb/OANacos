@@ -1,0 +1,8 @@
+rootProject.name = 'OANacos'
+include 'oa-common'
+include 'oa-operation-service'
+include 'oa-operation-api'
+include 'oa-user-service'
+include 'oa-user-api'
+include 'oa-gateway'
+

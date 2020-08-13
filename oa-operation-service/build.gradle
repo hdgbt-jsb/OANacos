@@ -1,0 +1,16 @@
+dependencies {
+    compile project(":oa-common")
+    compile project(":oa-operation-api")
+    compile project(":oa-user-api")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-discovery', version: '2.2.0.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.0.RELEASE'
+
+    compile 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.2.0.RELEASE'
+    runtime group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Hoxton.SR7'
+
+}
+description = "oa运营模块服务"

@@ -1,0 +1,12 @@
+# 应用名称
+spring:
+  application:
+    name: oa-gateway
+server:
+  port: 8888 #服务端口
+
+#基本信息
+info:
+  description: 黑大OA签到平台网关
+  version: v1.0
+  author: 技术部

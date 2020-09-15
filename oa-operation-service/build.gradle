@@ -11,6 +11,9 @@ dependencies {
 
     compile 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.2.0.RELEASE'
     runtime group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Hoxton.SR7'
+    compile("org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE")
+    compile("com.alibaba.cloud:spring-cloud-starter-dubbo:2.2.0.RELEASE")
+    compile("org.apache.dubbo:dubbo:2.7.7")
 
 }
 description = "oa运营模块服务"

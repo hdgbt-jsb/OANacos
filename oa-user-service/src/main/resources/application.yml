@@ -35,3 +35,14 @@ dubbo:
     name: dubbo
   registry:
     address: nacos://60.205.230.70
+
+feign:
+  httpclient:
+    enabled: false
+    # feign最大连接数
+    max-connections: 200
+    # feign单个路径的最大连接数
+    max-connections-per-route: 50
+  okhttp:
+    # 让feign使用Apache okhttp做请求，而不是默认的urlConnection
+    enabled: true

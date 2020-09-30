@@ -9,6 +9,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.0.RELEASE'
 
+    // https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel
+    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-sentinel', version: '2.2.0.RELEASE'
     compile 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.2.0.RELEASE'
     runtime group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Hoxton.SR7'
     compile("org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE")

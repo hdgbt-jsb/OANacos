@@ -1,4 +1,6 @@
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    //SpringBootWeb模块
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 }
 description = "oa用户模块服务提供者API"

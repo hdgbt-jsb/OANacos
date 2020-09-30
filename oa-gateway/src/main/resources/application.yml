@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: oa-gateway
   cloud:
     nacos:
       discovery:

@@ -1,7 +1,7 @@
 buildscript {
     // 定义变量
     ext {
-        springBootVersion = '2.2.0.RELEASE'
+        springBootVersion = '2.2.2.RELEASE'
         ALI_REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public'
     }
     // 仓库地址
@@ -45,11 +45,14 @@ subprojects {
         // SpringBoot测试类需要的jar包
         testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 
+        // https://mvnrepository.com/artifact/com.alibaba/fastjson
+        compile group: 'com.alibaba', name: 'fastjson', version: '1.2.74'
+        
         //lombok的jar包
-        compileOnly 'org.projectlombok:lombok:1.18.10'
-        annotationProcessor 'org.projectlombok:lombok:1.18.10'
-        testCompileOnly 'org.projectlombok:lombok:1.18.10'
-        testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+        compileOnly 'org.projectlombok:lombok:1.18.16'
+        annotationProcessor 'org.projectlombok:lombok:1.18.16'
+        testCompileOnly 'org.projectlombok:lombok:1.18.16'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
         //swagger驱动
         compile 'io.springfox:springfox-swagger-ui:2.9.2'
         compile 'io.springfox:springfox-swagger2:2.9.2'

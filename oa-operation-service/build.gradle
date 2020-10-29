@@ -4,15 +4,16 @@ dependencies {
     compile project(":oa-user-api")
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
-    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-discovery', version: '2.2.0.RELEASE'
+    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-discovery', version: '2.2.2.RELEASE'
 
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.2.RELEASE'
 
-    compile 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.2.0.RELEASE'
+    compile 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.2.2.RELEASE'
     runtime group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Hoxton.SR7'
-    compile("org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE")
-    compile("com.alibaba.cloud:spring-cloud-starter-dubbo:2.2.0.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-actuator:2.2.2.RELEASE")
+    compile 'io.projectreactor.netty:reactor-netty:0.9.4.RELEASE'
+    compile("com.alibaba.cloud:spring-cloud-starter-dubbo:2.2.2.RELEASE")
     compile("org.apache.dubbo:dubbo:2.7.7")
 
 }
